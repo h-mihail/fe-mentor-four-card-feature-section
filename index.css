@@ -1,0 +1,152 @@
+html {
+  box-sizing: border-box;
+
+  font-size: 15px;
+  font-family: "Poppins";
+
+  color: hsl(229, 6%, 66%);
+  background-color: hsl(0, 0%, 98%);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+  padding: 3em;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    height: auto;
+  }
+}
+
+/* TITLE */
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40em;
+}
+
+@media only screen and (max-width: 768px) {
+  .title-container {
+    width: auto;
+  }
+}
+
+.title {
+  color: hsl(234, 12%, 34%);
+  font-weight: 200;
+  font-size: 2.25rem;
+}
+
+.subtitle {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+  font-size: 2.25rem;
+}
+
+.description {
+  margin-top: 1em;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+/* CARD CONTAINER */
+
+.card-container {
+  gap: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+  }
+}
+
+.card-container-center {
+  gap: 2em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* CARD */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 26em;
+  height: 18em;
+  padding: 2em;
+  border-radius: 0.5em;
+  background-color: white;
+  box-shadow: 0.25em 0.25em 1.5em rgba(0, 0, 100, 0.2);
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+    height: 20em;
+  }
+}
+
+.card-title {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.card-image {
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-image > img {
+    width: 5em;
+    height: 5em;
+  }
+}
+
+.cyan-accent {
+  border-top: 0.325em solid hsl(180, 62%, 55%);
+}
+
+.red-accent {
+  border-top: 0.325em solid hsl(0, 78%, 62%);
+}
+
+.orange-accent {
+  border-top: 0.325em solid hsl(34, 97%, 64%);
+}
+
+.blue-accent {
+  border-top: 0.325em solid hsl(212, 86%, 64%);
+}
